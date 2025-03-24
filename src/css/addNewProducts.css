@@ -1,0 +1,103 @@
+/* Add Product Form Container */
+#add-product-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+/* Form Heading */
+#add-product-form-head {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Form Labels */
+#add-product-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input Fields & Textarea */
+#product-name,
+#product-price,
+#select-medicine,
+#description-text {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+#description-text {
+  resize: none;
+  height: 120px;
+}
+
+/* Input Focus Effect */
+#product-name:focus,
+#product-price:focus,
+#select-medicine:focus,
+#description-text:focus {
+  border-color: #2196f3;
+  outline: none;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.2);
+}
+
+/* Submit Button */
+#add-product-form-submit {
+  background: linear-gradient(135deg, #2196f3, #0b7dda);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+#add-product-form-submit:hover {
+  background: linear-gradient(135deg, #0b7dda, #0a5da8);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #add-product-form {
+      width: 90%;
+      padding: 20px;
+  }
+
+  #add-product-form-head {
+      font-size: 22px;
+  }
+
+  #product-name,
+  #product-price,
+  #select-medicine,
+  #description-text {
+      font-size: 14px;
+  }
+
+  #add-product-form-submit {
+      font-size: 16px;
+  }
+}

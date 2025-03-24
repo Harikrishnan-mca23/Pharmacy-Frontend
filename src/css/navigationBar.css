@@ -1,0 +1,92 @@
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #034694;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Brand Name */
+.navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #ffdd57;
+}
+
+/* Navigation Items */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+/* Navigation Links */
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffdd57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .nav-link {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+/* Background Image for Expanded Navbar */
+.navbar-expand-lg {
+  background-image: url('../images/navigateBar.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}

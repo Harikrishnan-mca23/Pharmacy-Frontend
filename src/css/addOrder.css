@@ -1,0 +1,99 @@
+/* Order Form Container */
+#add-order-form {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+/* Form Heading */
+#add-order-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+#add-order-form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields & Select Dropdown */
+#add-order-form input,
+#add-order-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+#add-order-form input:focus,
+#add-order-form select:focus {
+  border-color: #2196f3;
+  outline: none;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.2);
+}
+
+/* Buttons */
+#add-order-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Primary Button */
+#add-order-form button[type="submit"] {
+  background: linear-gradient(135deg, #2196f3, #1769aa);
+  color: white;
+}
+
+#add-order-form button[type="submit"]:hover {
+  background: linear-gradient(135deg, #1769aa, #0d47a1);
+  transform: scale(1.05);
+}
+
+/* Secondary Button */
+#add-order-form button:not([type="submit"]) {
+  background-color: #4caf50;
+  color: white;
+}
+
+#add-order-form button:not([type="submit"]):hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #add-order-form {
+      width: 90%;
+      padding: 20px;
+  }
+
+  #add-order-form input,
+  #add-order-form select {
+      font-size: 14px;
+  }
+
+  #add-order-form button {
+      font-size: 14px;
+  }
+}

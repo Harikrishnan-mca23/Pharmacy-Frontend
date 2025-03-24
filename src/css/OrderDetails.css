@@ -1,0 +1,127 @@
+/* Order Details Page Styling */
+
+#orders-head {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin: 30px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Table Styling */
+#order-list-for-supplier {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(134, 191, 252, 0.7);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+#order-list-for-supplier thead {
+  background: linear-gradient(135deg, #0056b3, #2196f3);
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Table Header Cells */
+#order-list-for-supplier thead th {
+  padding: 12px;
+  border-bottom: 2px solid white;
+}
+
+/* Table Body Rows */
+#order-list-for-supplier tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Alternating Row Colors */
+#order-list-for-supplier tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#order-list-for-supplier tbody tr:nth-child(odd) {
+  background: rgba(245, 245, 245, 0.9);
+}
+
+/* Table Data Cells */
+#order-list-for-supplier tbody td {
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Hover Effect on Rows */
+#order-list-for-supplier tbody tr:hover {
+  background: rgba(134, 191, 252, 0.5);
+  transform: scale(1.02);
+}
+
+/* Accept Button */
+#accept-order {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#accept-order:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+  transform: scale(1.05);
+}
+
+/* Decline Button */
+#decline-order {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f44336, #b71c1c);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#decline-order:hover {
+  background: linear-gradient(135deg, #b71c1c, #7f0000);
+  transform: scale(1.05);
+}
+
+/* Decline Reason Section */
+.view-decline-reason {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ff3d00;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #order-list-for-supplier {
+      width: 95%;
+      font-size: 14px;
+  }
+
+  #orders-head {
+      font-size: 24px;
+  }
+
+  #accept-order,
+  #decline-order {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}

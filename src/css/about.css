@@ -1,0 +1,50 @@
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    padding: 20px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .about-subtitle {
+    font-size: 1.5rem;
+    color: #374151;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .about-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .about-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  

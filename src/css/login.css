@@ -1,0 +1,137 @@
+/* Supplier Login Container */
+#supplier-login {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+/* Login Heading */
+#supplier-login-head {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Login Form */
+#supplier-login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Fields */
+#supplier-login-form div {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Labels */
+#supplier-login-form label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+#supplier-login-form input[type="email"],
+#supplier-login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* Input Focus Effect */
+#supplier-login-form input[type="email"]:focus,
+#supplier-login-form input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Buttons */
+#supplier-login-button,
+#supplier-regSup-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Login Button */
+#supplier-login-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+#supplier-login-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+  transform: scale(1.05);
+}
+
+/* Register Button */
+#supplier-regSup-button {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  margin-top: 10px;
+}
+
+#supplier-regSup-button:hover {
+  background: linear-gradient(135deg, #1e7e34, #155724);
+  transform: scale(1.05);
+}
+
+/* Forgot Password Link */
+#supplier-login-form a {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#supplier-login-form a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #supplier-login {
+      width: 90%;
+      padding: 20px;
+  }
+
+  #supplier-login-head {
+      font-size: 22px;
+  }
+
+  #supplier-login-form input[type="email"],
+  #supplier-login-form input[type="password"] {
+      font-size: 14px;
+  }
+
+  #supplier-login-button,
+  #supplier-regSup-button {
+      font-size: 16px;
+  }
+}
